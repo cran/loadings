@@ -39,12 +39,12 @@ Hiroyuki Yamamoto
 }
 \examples{
 data(whhl)
-X <- whhl$X
+X <- whhl$X$liver
 Y <- whhl$Y
 
 pls <- pls_svd(X,Y)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ partial least squares }
+\keyword{ multivariate }
 

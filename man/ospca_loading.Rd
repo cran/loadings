@@ -74,5 +74,5 @@ ospca$loading$p.value
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ orthogonal smoothed principal component analysis / loading }
+\keyword{ multivariate }
 

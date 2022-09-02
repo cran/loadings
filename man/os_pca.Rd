@@ -69,5 +69,5 @@ ospca <- os_pca(X,D,0.1,M)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ orthogonal smoothed principal component analysis }
+\keyword{ multivariate }
 

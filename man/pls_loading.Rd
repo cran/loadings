@@ -45,7 +45,7 @@ Hiroyuki Yamamoto
 }
 \examples{
 data(whhl)
-X <- whhl$X
+X <- whhl$X$liver
 Y <- whhl$Y
 
 pls <- pls_svd(X,Y)
@@ -57,5 +57,5 @@ pls$loading$p.value
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ partial least squares / loading }
+\keyword{ multivariate }
 

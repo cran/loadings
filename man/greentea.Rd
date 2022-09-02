@@ -29,5 +29,5 @@ Pongsuwan W., Fukusaki E., Bamba T., Yonetani T., Yamahara A.T., Kobayashi A. Pr
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ metabolome data }
+\keyword{ datasets }
 

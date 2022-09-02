@@ -1,9 +1,9 @@
 \name{pls_rog}
 \alias{pls_rog}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Partial least squares rank order of groups}
+\title{PLS-ROG : Partial least squares with rank order of groups}
 \description{
-This function performs partial least squares rank order of groups (PLS-ROG).
+This function performs partial least squares with rank order of groups (PLS-ROG).
 In this function, data matrix is automatically scaled to zero mean and unit variance (i.e. autoscaling) for each variables.
 }
 \usage{
@@ -46,7 +46,7 @@ Hiroyuki Yamamoto
 }
 \examples{
 data(whhl)
-X <- whhl$X
+X <- whhl$X$liver
 Y <- whhl$Y
 D <- whhl$D
 
@@ -54,5 +54,5 @@ plsrog <- pls_rog(X,Y,D)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ partial least squares rank oder of groups }
+\keyword{ multivariate }
 

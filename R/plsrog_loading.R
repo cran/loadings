@@ -1,9 +1,9 @@
-pls_loading <- function(pls){
+plsrog_loading <- function(plsrog){
 
-  T <- data.frame(pls$T)
-  P <- data.frame(pls$P)
-  U <- data.frame(pls$U)
-  Q <- data.frame(pls$Q)
+  T <- data.frame(plsrog$T)
+  P <- data.frame(plsrog$P)
+  U <- data.frame(plsrog$U)
+  Q <- data.frame(plsrog$Q)
 
   n <- nrow(T)
 
@@ -19,10 +19,10 @@ pls_loading <- function(pls){
     p_PLS <- cbind(p_PLS,p)
   }
 
-  pls$loading$R <- PLS_loadings
-  pls$loading$p.value <- p_PLS
+  plsrog$loading$R <- PLS_loadings
+  plsrog$loading$p.value <- p_PLS
 
-  return(pls)
+  return(plsrog)
 }
 
 

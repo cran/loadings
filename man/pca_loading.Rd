@@ -46,5 +46,5 @@ pca$loading$p.value # p-value
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ principal component analysis / loading }
+\keyword{ multivariate }
 
