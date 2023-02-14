@@ -34,5 +34,13 @@ pls_rog <- function(X, Y, D, kappa=0.999){
   T <- X%*%Wx
   S <- Y%*%Wy
 
+  # matching sign
+  for(i in 1:ncol(T)){
+    if (stats::cov(T[,i],S[,i])<0){
+      S[,i] <- -S[,i]
+      Wy[,i] <- -Wy[,i]
+    }
+  }
+
   list(P=Wx, T=T, Q=Wy, U=S)
 }
