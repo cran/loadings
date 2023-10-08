@@ -1,8 +1,14 @@
+## version 0.4.1
+
+- Updated in October 14th, 2023.
+- Added PLS-DA and RCCA-DA.
+- Correction of full-width Greek letters (whhl.RData).
+
 ## version 0.3.1
 
 - Updated in February 14th, 2023.
 - Added one-sided kernel PCA.
-- Some bug fixes (pca_loading.R, pls_rog.R, multipls_rog.R) and correction of full-width Greek letters (whhl.RData).
+- Some bug fixes (pca_loading.R, pls_rog.R, multipls_rog.R).
 
 ## version 0.2.1
 
