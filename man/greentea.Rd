@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Metabolome analysis of Japanese green tea}
 \description{
-This includes metabolome data of Japanese green tea measured by gas chromatgraphy mass spectrometry. The data matrix contains 30 samples and 225 metabolites.
+This includes metabolome data of Japanese green tea measured by gas chromatography mass spectrometry. The data matrix contains 30 samples and 225 metabolites.
 }
 \usage{
 data(greentea)

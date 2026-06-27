@@ -18,7 +18,7 @@ The list object "whhl" contains the following elements:
 
   D : Example of differential matrix used in PLS-ROG or multiset PLS-ROG.
 
-  tau : Example of strength parameter matrix used in mutliset PLS or multiset PLS-ROG. All weights were set as the same value of 0.1.
+  tau : Example of strength parameter matrix used in multiset PLS or multiset PLS-ROG. All weights were set as the same value of 0.1.
 
 }
 \source{

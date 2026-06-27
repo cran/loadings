@@ -1,7 +1,5 @@
 # loadings
 
-<img src="sticker.png" alt="loadings sticker" width="250"/>
-
 Statistical hypothesis testing of loadings in multivariate analysis.
 
 **loadings**  provides functions for computing loading and its statistical hypothesis testing in principal component analysis and partial least squares.
@@ -16,7 +14,7 @@ Statistical hypothesis testing of loadings in multivariate analysis.
 
 - Multiset PLS and Multiset PLS-ROG [5] integrate multi-omics data. Their loading and *p*-values can also be calculated.
 
-- One-sided kernel PCA [6], which is a partially nonlinear extention of PCA by kernel method, can be calculated. Their loading and *p*-values can also be calculated.
+- One-sided kernel PCA [6], which is a partially nonlinear extension of PCA by kernel method, can be calculated. Their loading and *p*-values can also be calculated.
 
 - Partial least squares discriminant analysis (PLS-DA) [7] can be calculated. Their loading and *p*-values can also be calculated.
 
@@ -47,4 +45,7 @@ The latest development version can be installed from GitHub:
 # install.packages("devtools")
 devtools::install_github("hiroyukiyamamoto/loadings")
 ```
+
+
+
 

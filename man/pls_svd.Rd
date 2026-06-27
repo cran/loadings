@@ -18,7 +18,7 @@ pls_svd(X,Y)
   }
 }
 \details{
-This function is wrapper function of "pls_rog" fucntion that the smoothing parameter kappa=0.
+This function is wrapper function of "pls_rog" function that the smoothing parameter kappa=0.
 }
 \value{
 The return value is a list object that contains the following elements:

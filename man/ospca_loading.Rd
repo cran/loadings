@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Orthogonal smoothed principal component loading}
 \description{
-This function computes orthogonals smoothed principal component (OS-PC) loading from the result of the "os_pca" function.
+This function computes orthogonal smoothed principal component (OS-PC) loading from the result of the "os_pca" function.
 This is also wrapper function of pls_loading function.
 }
 \usage{

@@ -34,7 +34,7 @@ multipls_rog <- function (X,Y,tau,D,kappa = 0.999)
   else {
     B[(nrow(B) - ncol(Y) + 1):nrow(B), (nrow(B) - ncol(Y) + 1):nrow(B)] <- (1 - kappa) * diag(1, ncol(Y))
   }
-  eig_plsrog <- geigen::geigen(ZZ, B, symmetric = TRUE)
+  eig_plsrog <- .generalized_eigen_symmetric(ZZ, B)
   w_multiplsrog <- eig_plsrog$vector
   lambda <- eig_plsrog$values
   lambda_index <- order(lambda, decreasing = TRUE)

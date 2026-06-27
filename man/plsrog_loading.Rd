@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Partial least squares rank order of groups loading}
 \description{
-This function computes partial least squares rank rder of groups (PLS-ROG) loading from the result of the "pls_rog" function.
+This function computes partial least squares rank order of groups (PLS-ROG) loading from the result of the "pls_rog" function.
 PLS-ROG loading can also be computed from the result of the "pls_rog" function.
 }
 \usage{

@@ -23,6 +23,7 @@ multipls_geigen(X,Y,tau)
 }
 \details{
 Diagonal elements of matrix tau must be 0.
+The generalized eigenvalue calculation is performed internally.
 }
 \value{
 The return value is a list object that contains the following elements:

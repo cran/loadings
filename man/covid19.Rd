@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Proteome and metabolome data of COVID-19 serum samples.}
 \description{
-This is proteome and metabolome data of COVID-19 serum samples [B. Shen et al, Cell. 182 (2020) 59-72.e15.]. This dataset includes three groups of healthy control, mild and severe COVD-19.
+This is proteome and metabolome data of COVID-19 serum samples [B. Shen et al, Cell. 182 (2020) 59-72.e15.]. This dataset includes three groups of healthy control, mild and severe COVID-19.
 }
 \usage{
 data(covid19)
@@ -18,7 +18,7 @@ The list object "covid19" contains the following elements:
 
   D : Example of differential matrix used in PLS-ROG or multiset PLS-ROG.
 
-  tau : Example of strength parameter matrix used in mutliset PLS or multiset PLS-ROG. All weights were set as the same value of 0.1.
+  tau : Example of strength parameter matrix used in multiset PLS or multiset PLS-ROG. All weights were set as the same value of 0.1.
 
   K : List of kernel matrix by hyperbolic tangent kernel (scale=1, offset=1).
 

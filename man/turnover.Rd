@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Metabolomic Turnover analysis of the yeast culture mediums}
 \description{
-This includes differential isotopomer ratio from metabolomic turnover analysis of yeast cultures by gas chromatgraphy mass spectrometry. The data matrix contains 11 samping time for three groups of different yeast strains and culture condition (33 samples total) and 60 peaks.
+This includes differential isotopomer ratio from metabolomic turnover analysis of yeast cultures by gas chromatography mass spectrometry. The data matrix contains 11 sampling time for three groups of different yeast strains and culture condition (33 samples total) and 60 peaks.
 }
 \usage{
 data(turnover)

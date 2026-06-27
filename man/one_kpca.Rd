@@ -15,11 +15,12 @@ one_kpca(X,K)
 	Data matrix that include variables in each columns.
   }
   \item{K}{
-	Kernel matrix computed from the data matrix X.
+	Centered kernel or similarity matrix.
   }
 }
 \details{
 The kernel matrix K, which is the argument of the one_kpca function, must be centered.
+If K is indefinite, a positive semidefinite approximation is computed internally by replacing negative eigenvalues with zero.
 }
 \value{
 The return value is a list object that contains the following elements:
@@ -28,11 +29,13 @@ P : A matrix with one-sided KPCA loading in each column
 
 T : A matrix with one-sided KPCA score for linear side in each column
 
-U : A matrix with one-sied KPCA score for nonlinear side in each column
+U : A matrix with one-sided KPCA score for nonlinear side in each column
 
 }
 \references{
 Yamamoto H. (2023) One-sided Kernel Principal Component Analysis, Jxiv, <doi:10.51094/jxiv.262>.
+
+Higham N.J. (1988) Computing a nearest symmetric positive semidefinite matrix, Linear Algebra and its Applications, 103:103-118.
 }
 \author{
 Hiroyuki Yamamoto
@@ -43,6 +46,17 @@ data(covid19)
 
 X <- covid19$X$metabolomics
 K <- covid19$K$metabolomics
+
+onekpca <- one_kpca(X,K)
+
+# Metabolome and microbiome data from antibiotic-treated mouse feces
+data(antibiotic)
+
+X <- t(as.matrix(antibiotic$data$X$metabolome))
+D <- antibiotic$data$X$microbiome$dist
+K <- matrix(0, nrow(D), ncol(D))
+K[D > 0] <- 1 / D[D > 0]
+K <- (K + t(K)) / 2
 
 onekpca <- one_kpca(X,K)
 

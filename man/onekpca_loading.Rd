@@ -19,7 +19,7 @@ onekpca_loading(onekpca)
 
   T : A matrix with one-sided KPCA score for linear side in each column
 
-  U : A matrix with one-sied KPCA score for nonlinear side in each column
+  U : A matrix with one-sided KPCA score for nonlinear side in each column
 
   }
 }
@@ -47,6 +47,22 @@ data(covid19)
 
 X <- covid19$X$metabolomics
 K <- covid19$K$metabolomics
+
+onekpca <- one_kpca(X,K)
+
+onekpca <- onekpca_loading(onekpca)
+
+onekpca$loading$R
+onekpca$loading$p.value
+
+# Metabolome and microbiome data from antibiotic-treated mouse feces
+data(antibiotic)
+
+X <- t(as.matrix(antibiotic$data$X$metabolome))
+D <- antibiotic$data$X$microbiome$dist
+K <- matrix(0, nrow(D), ncol(D))
+K[D > 0] <- 1 / D[D > 0]
+K <- (K + t(K)) / 2
 
 onekpca <- one_kpca(X,K)
 
